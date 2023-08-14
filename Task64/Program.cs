@@ -3,7 +3,6 @@
 
 string NaturalNumbers (int n, int m)
 {
-    //string result = ;
     if (n>=1) return $"{n} " + NaturalNumbers(n-1,1);
     else return string.Empty;
 }
