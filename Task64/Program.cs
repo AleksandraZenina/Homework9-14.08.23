@@ -1,14 +1,10 @@
 ﻿// Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1. 
 // Выполнить с помощью рекурсии.
 
-string NaturalNumbers (int n)
+string NaturalNumbers (int n, int m)
 {
-    string result = string.Empty;
-    if (n>=1)
-    for (int i=n; i>=1; i--)
-    {
-        result += $"{i} ";
-    }
-    return result;
+    //string result = ;
+    if (n>=1) return $"{n} " + NaturalNumbers(n-1,1);
+    else return string.Empty;
 }
-Console.WriteLine (NaturalNumbers(10));
+Console.WriteLine (NaturalNumbers(12,1));
